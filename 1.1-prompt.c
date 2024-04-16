@@ -13,9 +13,9 @@ int main(void)
 			printf("buffer if : %s", buff);
 			if (getchar () == EOF)
 			{
-			printf("CTRL + D pressed \n");
-			printf("the value of EOF is : %d \n", EOF);
-			return (0);
+				printf("CTRL + D pressed \n");
+				printf("the value of EOF is : %d \n", EOF);
+				return (0);
 			}
 	}
 }
