@@ -8,9 +8,15 @@ int main(void)
 
 	while (1)
 	{
-		printf("$ ");
-		getline(&buff, &len, stdin);
-		printf("%s", buff);
+		
+			printf("$ ");
+			getline(&buff, &len, stdin);
+			printf("%s", buff);
+		if (getchar() == EOF)
+		{
+			printf("CTRL + D pressed \n");
+			printf("the value of EOF is : %d \n", EOF);
+			return (0);
+		}
 	}
-	return (0);
 }
