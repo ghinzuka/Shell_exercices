@@ -10,8 +10,7 @@ int main(void)
     if (execve(argpath, argv, NULL) == -1)
     {
         perror("Error:");
-        printf("After execve\n");
     }
-    
+    printf("After execve\n");
     return (0);
 }
